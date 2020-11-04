@@ -1,0 +1,53 @@
+center {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+#godgames {
+    color: black;
+}
+
+#Produtos {
+    color: black;
+}
+
+#Lojas {
+    color: black;
+}
+
+#fale_conosco {
+    color: black;
+}
+
+#formadepagamento {
+    color: orangered;
+}
+
+.menu {
+    background-color: orangered;
+}
+
+b {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+strike {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: orangered;
+    font-size: large;
+}
+
+li {
+    margin: 10px;
+    padding: 5px;
+}
+
+.preço {
+    color: orangered;
+}

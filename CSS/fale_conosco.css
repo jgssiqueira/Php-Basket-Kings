@@ -1,0 +1,33 @@
+center {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+#basketkings {
+    color: black;
+}
+
+#Produtos {
+    color: Black;
+}
+
+#Lojas {
+    color: Black;
+}
+
+#fale_conosco {
+    color: Black;
+}
+
+#formadepagamento {
+    color: orangered;
+}
+
+p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    background-color: orangered
+}

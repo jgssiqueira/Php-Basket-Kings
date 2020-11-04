@@ -1,33 +1,34 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Basket Kings</title>
-        <link rel="stylesheet" href="CSS/index.css">
-    </head>
-    <body>
-        <!-- menu -->
-        <?php
-        include('menu.html');
-        ?>
-
-        <br> <br> <br> <br> <br>
-
-
-        <main>
-            <h2>Bem-vindos ao Reino do Basquete!</h2>
-            <p>Compras acima de <b>R$ 200,00</b>, tem <b><i>frete grátis</i></b> para todo o país.</p>
-        </main>
-        
-        <br> <br> <br> <br> <br>
-        <br> <br> <br> <br> <br>
-
-        <br> <br> <br>
-
-        <footer id="rodape">
-            <p id="formadepagamento"><b>Formas de Pagamento:</b></p>
-            <img src="Imagens/Cartoespagamentos.jpg">
-            <p>&copy; Todos os direitos reservados.</p>
-        </footer>
-    </body>
+	<head>
+		<meta charset="utf-8">
+		<title>Pedidos</title>		
+	</head>
+	<body>
+		<h1>Enviar Pedido</h1>
+		<?php
+		if(isset($_SESSION['msg'])){
+			echo $_SESSION['msg'];
+			unset($_SESSION['msg']);
+		}
+		?>
+		<form method="POST" action="envios.php">
+			<label>Cliente: </label>
+			<input type="text" name="cliente" placeholder="Digite o nome do cliente"><br><br>
+			
+			<label>Produto: </label>
+			<input type="text" name="produto" placeholder="Digite o nome do produto"><br><br>
+			
+			<label>Quantidade: </label>
+			<input type="text" name="quantidade" placeholder="Digite a quantidade"><br><br>
+			
+			<label>Endereço: </label>
+			<input type="text" name="endereço" placeholder="Digite o endereço"><br><br>
+			
+			<input type="submit" value="Enviar">
+		</form>
+	</body>
 </html>
